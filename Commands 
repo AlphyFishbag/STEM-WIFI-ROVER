@@ -1,0 +1,8 @@
+Commands for Raspberry Pi
+IP address = 10.32.229.207
+Command to start webcam streaming  = sudo mjpg_streamer -i "/usr/lib/input_uvc.so -d /dev/video0 -n -y f 15 -r 640x480" -o "/usr/lib/output_http.so -p 80 -w /usr/local/www"
+
+Commands to start Motors
+cd drv8835-motor-driver-rpi
+sudo python example.py
+this will start the example script which will run both motors forward and backwards once
